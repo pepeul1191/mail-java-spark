@@ -38,10 +38,11 @@ public class Mail {
     String smtp = this.config.getString("mailer.smtp");
     String user = this.config.getString("mailer.users." + userName + ".user");
     String pass = this.config.getString("mailer.users." + userName + ".pass");
+    int port = this.config.getInt("mailer.users." + userName + ".port");
     boolean debug = this.config.getBoolean("mailer.debug");
     // creating mailer
     this.mailer = MailerBuilder
-      .withSMTPServer(smtp, 25, user, pass)
+      .withSMTPServer(smtp, port, user, pass)
       .withSessionTimeout(10)
       .withTransportStrategy(TransportStrategy.SMTP_TLS)
       .clearEmailAddressCriteria() // turns off email validation
