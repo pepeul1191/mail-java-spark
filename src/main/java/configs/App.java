@@ -6,7 +6,9 @@ import static spark.Spark.port;
 import static spark.Spark.options;
 import static spark.Spark.before;
 import static spark.Spark.get;
+import static spark.Spark.post;
 import configs.FilterHandler;
+import handlers.MailHandler;
 
 public class App {
   public static void main(String args[]){
@@ -33,6 +35,8 @@ public class App {
 		//filters
 		before("*", FilterHandler.setHeaders);
 		before("*", FilterHandler.ambinteLogs);
+		//rutas de servicios REST a handlers
+		post("/mail/wellcome", MailHandler.wellcome);
 		//ruta de test/conexion
 		get("/test/conexion", (request, response) -> {
 			return "Conxión OK";
