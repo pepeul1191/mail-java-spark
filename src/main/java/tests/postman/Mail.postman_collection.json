@@ -1,0 +1,72 @@
+{
+	"id": "3a575e70-93e4-d116-0643-349d77614c58",
+	"name": "Mail",
+	"description": "",
+	"order": [
+		"344e18ba-269c-5d72-518c-8d11bf4abfbe"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1539745027373,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "344e18ba-269c-5d72-518c-8d11bf4abfbe",
+			"headers": "csrf_val: PKBcauXg6sTXz7Ddlty0nejVgoUodXL89KNxcrfwkEme0Huqtj6jjt4fP7v2uF4L\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "csrf_val",
+					"value": "PKBcauXg6sTXz7Ddlty0nejVgoUodXL89KNxcrfwkEme0Huqtj6jjt4fP7v2uF4L",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4300/mail/wellcome",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Pepe Valdivia",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "info@softweb.pe",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "language",
+					"value": "sp",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539916550691,
+			"name": "wellcome",
+			"description": "",
+			"collectionId": "3a575e70-93e4-d116-0643-349d77614c58",
+			"responses": []
+		}
+	]
+}
