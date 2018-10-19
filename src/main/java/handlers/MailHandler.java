@@ -21,7 +21,7 @@ public class MailHandler{
       locals.put("nombre", name);
       // creating email
       //- layout, partial, language
-      Mail mail = new Mail("blank", "demo", language); 
+      Mail mail = new Mail("mail", "wellcome", language); 
       // user name registred in application.conf/mailer/users/{name}
       mail.setMailer("demo");
       //- userName, destinationName, destiationEmail, ccoName, subjectName, language, localsPartial in application.conf/email

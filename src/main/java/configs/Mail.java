@@ -23,7 +23,7 @@ public class Mail {
   public Mail(String layout, String partial, String language) {
     // loading TypeSafe files
     Config partialConfig = ConfigFactory.parseResources("templates/partial_" + partial + ".conf");
-    Config templateConfig = ConfigFactory.parseResources("templates/layout_blank.conf");
+    Config templateConfig = ConfigFactory.parseResources("templates/layout_" + layout + ".conf");
     // assigning to attributes
     this.config = ConfigFactory.parseResources("application.conf");
     this.partial = partialConfig.getString("yield." + language);
