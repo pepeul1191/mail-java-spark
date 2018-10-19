@@ -15,16 +15,17 @@ public class MailHandler{
 	  try {
 		  String name = request.queryParams("name");
       String email = request.queryParams("email");
+      String language = request.queryParams("language");
       //template data to replace with string format
       Map<String, String> locals = new HashMap<String, String>();
       locals.put("nombre", name);
       // creating email
       //- layout, partial, language
-      Mail mail = new Mail("blank", "demo", "en"); 
+      Mail mail = new Mail("blank", "demo", language); 
       // user name registred in application.conf/mailer/users/{name}
       mail.setMailer("demo");
       //- userName, destinationName, destiationEmail, ccoName, subjectName, language, localsPartial in application.conf/email
-      mail.setEMail("demo", "C. Tevez", email, "pepe", "wellcome", "en", locals);
+      mail.setEMail("demo", "C. Tevez", email, "pepe", "wellcome", language, locals);
       //System.out.println(mail.getBody());
       // send
       mail.sendMail();

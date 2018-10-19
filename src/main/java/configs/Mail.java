@@ -38,7 +38,7 @@ public class Mail {
     String smtp = this.config.getString("mailer.smtp");
     String user = this.config.getString("mailer.users." + userName + ".user");
     String pass = this.config.getString("mailer.users." + userName + ".pass");
-    boolean debug = this.config.getBoolean("debug");
+    boolean debug = this.config.getBoolean("mailer.debug");
     // creating mailer
     this.mailer = MailerBuilder
       .withSMTPServer(smtp, 25, user, pass)
