@@ -35,6 +35,7 @@ public class App {
 		//filters
 		before("*", FilterHandler.setHeaders);
 		before("*", FilterHandler.ambinteLogs);
+		before("/mail/*", FilterHandler.ambienteCSRF);
 		//rutas de servicios REST a handlers
 		post("/mail/wellcome", MailHandler.wellcome);
 		//ruta de test/conexion
