@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>pe.softweb</groupId>
-  <artifactId>static</artifactId>
+  <artifactId>mail</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>static Maven Webapp</name>
@@ -33,7 +33,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>static</finalName>
+    <finalName>mail</finalName>
     <plugins>
       <!-- Usar JDK8, soporta lamdas-->
       <plugin>

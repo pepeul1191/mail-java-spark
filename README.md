@@ -1,4 +1,4 @@
-# Static File Server Boilerplate Java Spark
+# Mail Java Spark
 
 Crear proyecto con Maven
 
